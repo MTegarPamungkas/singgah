@@ -1,0 +1,35 @@
+{
+    "name": "Singgah — diingetin pas di tempatnya",
+    "short_name": "Singgah",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#06101C",
+    "theme_color": "#0D2A47",
+    "description": "Pengingat yang muncul saat kamu tiba atau meninggalkan sebuah Titik. Titik, Misi, dan Titipan untuk keluarga dan rekan.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

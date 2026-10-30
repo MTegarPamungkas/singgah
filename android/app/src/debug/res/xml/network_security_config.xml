@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Debug builds talk to a self-hosted Appwrite instance over plain HTTP, either
+  through the emulator host (10.0.2.2) or a LAN address on a physical device.
+  Production builds keep cleartext disabled, so a real deployment must expose
+  Appwrite through HTTPS.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

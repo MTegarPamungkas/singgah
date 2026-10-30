@@ -1,0 +1,1267 @@
+{
+    "projectId": "6ae342bf003cabd6754b",
+    "functions": [
+        {
+            "$id": "accept-titipan",
+            "name": "Accept Titipan",
+            "runtime": "node-22",
+            "path": "functions/accept-titipan",
+            "entrypoint": "index.js",
+            "execute": [
+                "any"
+            ],
+            "enabled": true,
+            "logging": true,
+            "events": [],
+            "schedule": "",
+            "interval": 0,
+            "timeout": 15,
+            "commands": "npm install",
+            "scopes": [],
+            "installationId": "",
+            "providerRepositoryId": "",
+            "providerBranch": "",
+            "providerSilentMode": false,
+            "providerRootDirectory": "",
+            "providerBranches": [],
+            "providerPaths": [],
+            "buildSpecification": "s-8vcpu-8gb",
+            "runtimeSpecification": "s-8vcpu-8gb",
+            "deploymentRetention": 0
+        },
+        {
+            "$id": "parse-reminder",
+            "name": "Parse Reminder",
+            "runtime": "node-22",
+            "path": "functions/parse-reminder",
+            "entrypoint": "index.js",
+            "execute": [
+                "any"
+            ],
+            "enabled": true,
+            "logging": true,
+            "events": [],
+            "schedule": "",
+            "interval": 0,
+            "timeout": 15,
+            "commands": "npm install",
+            "scopes": [],
+            "installationId": "",
+            "providerRepositoryId": "",
+            "providerBranch": "",
+            "providerSilentMode": false,
+            "providerRootDirectory": "",
+            "providerBranches": [],
+            "providerPaths": [],
+            "buildSpecification": "s-8vcpu-8gb",
+            "runtimeSpecification": "s-8vcpu-8gb",
+            "deploymentRetention": 0
+        },
+        {
+            "$id": "geocode",
+            "name": "Geocode",
+            "runtime": "node-22",
+            "path": "functions/geocode",
+            "entrypoint": "index.js",
+            "execute": [
+                "any"
+            ],
+            "enabled": true,
+            "logging": true,
+            "events": [],
+            "schedule": "",
+            "interval": 0,
+            "timeout": 15,
+            "commands": "npm install",
+            "scopes": [],
+            "installationId": "",
+            "providerRepositoryId": "",
+            "providerBranch": "",
+            "providerSilentMode": false,
+            "providerRootDirectory": "",
+            "providerBranches": [],
+            "providerPaths": [],
+            "buildSpecification": "s-8vcpu-8gb",
+            "runtimeSpecification": "s-8vcpu-8gb",
+            "deploymentRetention": 0
+        },
+        {
+            "$id": "notify-titipan",
+            "name": "Notify Titipan",
+            "runtime": "node-22",
+            "path": "functions/notify-titipan",
+            "entrypoint": "index.js",
+            "execute": [
+                "any"
+            ],
+            "enabled": true,
+            "logging": true,
+            "events": [
+                "tablesdb.singgah.tables.titipan_recipients.rows.*.create"
+            ],
+            "schedule": "",
+            "interval": 0,
+            "timeout": 30,
+            "commands": "npm install",
+            "scopes": [],
+            "installationId": "",
+            "providerRepositoryId": "",
+            "providerBranch": "",
+            "providerSilentMode": false,
+            "providerRootDirectory": "",
+            "providerBranches": [],
+            "providerPaths": [],
+            "buildSpecification": "s-8vcpu-8gb",
+            "runtimeSpecification": "s-8vcpu-8gb",
+            "deploymentRetention": 0
+        },
+        {
+            "$id": "social",
+            "name": "Social",
+            "runtime": "node-22",
+            "path": "functions/social",
+            "entrypoint": "index.js",
+            "execute": [
+                "any"
+            ],
+            "enabled": true,
+            "logging": true,
+            "events": [],
+            "schedule": "",
+            "interval": 0,
+            "timeout": 30,
+            "commands": "npm install",
+            "scopes": [],
+            "installationId": "",
+            "providerRepositoryId": "",
+            "providerBranch": "",
+            "providerSilentMode": false,
+            "providerRootDirectory": "",
+            "providerBranches": [],
+            "providerPaths": [],
+            "buildSpecification": "s-8vcpu-8gb",
+            "runtimeSpecification": "s-8vcpu-8gb",
+            "deploymentRetention": 0
+        },
+        {
+            "$id": "send-titipan",
+            "name": "Send Titipan",
+            "runtime": "node-22",
+            "path": "functions/send-titipan",
+            "entrypoint": "index.js",
+            "execute": [
+                "any"
+            ],
+            "enabled": true,
+            "logging": true,
+            "events": [],
+            "schedule": "",
+            "interval": 0,
+            "timeout": 30,
+            "commands": "npm install",
+            "scopes": [],
+            "installationId": "",
+            "providerRepositoryId": "",
+            "providerBranch": "",
+            "providerSilentMode": false,
+            "providerRootDirectory": "",
+            "providerBranches": [],
+            "providerPaths": [],
+            "buildSpecification": "s-8vcpu-8gb",
+            "runtimeSpecification": "s-8vcpu-8gb",
+            "deploymentRetention": 0
+        },
+        {
+            "$id": "chat",
+            "name": "Chat",
+            "runtime": "node-22",
+            "path": "functions/chat",
+            "entrypoint": "index.js",
+            "execute": [
+                "any"
+            ],
+            "enabled": true,
+            "logging": true,
+            "events": [],
+            "schedule": "",
+            "interval": 0,
+            "timeout": 30,
+            "commands": "npm install",
+            "scopes": [],
+            "installationId": "",
+            "providerRepositoryId": "",
+            "providerBranch": "",
+            "providerSilentMode": false,
+            "providerRootDirectory": "",
+            "providerBranches": [],
+            "providerPaths": [],
+            "buildSpecification": "s-8vcpu-8gb",
+            "runtimeSpecification": "s-8vcpu-8gb",
+            "deploymentRetention": 0
+        }
+    ],
+    "tablesDB": [
+        {
+            "$id": "singgah",
+            "name": "Singgah",
+            "enabled": true
+        }
+    ],
+    "tables": [
+        {
+            "$id": "places",
+            "$permissions": [
+                "create(\"users\")"
+            ],
+            "databaseId": "singgah",
+            "name": "Places",
+            "enabled": true,
+            "rowSecurity": true,
+            "columns": [
+                {
+                    "key": "owner_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "name",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 140,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "latitude",
+                    "type": "double",
+                    "required": true,
+                    "array": false,
+                    "default": null,
+                    "min": -1.7976931348623157e+308,
+                    "max": 1.7976931348623157e+308
+                },
+                {
+                    "key": "longitude",
+                    "type": "double",
+                    "required": true,
+                    "array": false,
+                    "default": null,
+                    "min": -1.7976931348623157e+308,
+                    "max": 1.7976931348623157e+308
+                },
+                {
+                    "key": "address",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 240,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "radius_meters",
+                    "type": "integer",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "min": 100,
+                    "max": 2000
+                },
+                {
+                    "key": "icon_key",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 32,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "color_hex",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 16,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "created_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "updated_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "deleted_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_places_owner",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "owner_id"
+                    ],
+                    "orders": []
+                },
+                {
+                    "key": "idx_places_updated",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "updated_at"
+                    ],
+                    "orders": []
+                }
+            ]
+        },
+        {
+            "$id": "missions",
+            "$permissions": [
+                "create(\"users\")"
+            ],
+            "databaseId": "singgah",
+            "name": "Missions",
+            "enabled": true,
+            "rowSecurity": true,
+            "columns": [
+                {
+                    "key": "owner_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "place_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "title",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 140,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "note",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 2000,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "trigger",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "default": "arrive",
+                    "format": "enum",
+                    "elements": [
+                        "arrive",
+                        "leave"
+                    ]
+                },
+                {
+                    "key": "repeat_days",
+                    "type": "integer",
+                    "required": false,
+                    "array": true,
+                    "default": null,
+                    "min": -9223372036854776000,
+                    "max": 9223372036854776000
+                },
+                {
+                    "key": "window_start_minutes",
+                    "type": "integer",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "min": 0,
+                    "max": 1439
+                },
+                {
+                    "key": "window_end_minutes",
+                    "type": "integer",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "min": 0,
+                    "max": 1439
+                },
+                {
+                    "key": "is_active",
+                    "type": "boolean",
+                    "required": false,
+                    "array": false,
+                    "default": null
+                },
+                {
+                    "key": "last_triggered_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "created_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "updated_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "deleted_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_missions_owner",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "owner_id"
+                    ],
+                    "orders": []
+                },
+                {
+                    "key": "idx_missions_place",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "place_id"
+                    ],
+                    "orders": []
+                },
+                {
+                    "key": "idx_missions_updated",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "updated_at"
+                    ],
+                    "orders": []
+                }
+            ]
+        },
+        {
+            "$id": "titipan",
+            "$permissions": [
+                "create(\"users\")"
+            ],
+            "databaseId": "singgah",
+            "name": "Titipan",
+            "enabled": true,
+            "rowSecurity": true,
+            "columns": [
+                {
+                    "key": "sender_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "sender_name",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 140,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "place_id",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "place_name",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 140,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "latitude",
+                    "type": "double",
+                    "required": true,
+                    "array": false,
+                    "default": null,
+                    "min": -1.7976931348623157e+308,
+                    "max": 1.7976931348623157e+308
+                },
+                {
+                    "key": "longitude",
+                    "type": "double",
+                    "required": true,
+                    "array": false,
+                    "default": null,
+                    "min": -1.7976931348623157e+308,
+                    "max": 1.7976931348623157e+308
+                },
+                {
+                    "key": "radius_meters",
+                    "type": "integer",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "min": 100,
+                    "max": 2000
+                },
+                {
+                    "key": "title",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 140,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "body",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 2000,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "trigger",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "default": "arrive",
+                    "format": "enum",
+                    "elements": [
+                        "arrive",
+                        "leave"
+                    ]
+                },
+                {
+                    "key": "invite_token",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 64,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "recipient_hint",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 140,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "created_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "updated_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "deleted_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_titipan_sender",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "sender_id"
+                    ],
+                    "orders": []
+                },
+                {
+                    "key": "idx_titipan_token",
+                    "type": "unique",
+                    "status": "available",
+                    "columns": [
+                        "invite_token"
+                    ],
+                    "orders": []
+                },
+                {
+                    "key": "idx_titipan_updated",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "updated_at"
+                    ],
+                    "orders": []
+                }
+            ]
+        },
+        {
+            "$id": "titipan_recipients",
+            "$permissions": [],
+            "databaseId": "singgah",
+            "name": "Titipan Recipients",
+            "enabled": true,
+            "rowSecurity": true,
+            "columns": [
+                {
+                    "key": "titipan_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "user_id",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "invited_email",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 200,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "accepted_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "read_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "created_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "updated_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_recipients_titipan",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "titipan_id"
+                    ],
+                    "orders": []
+                },
+                {
+                    "key": "idx_recipients_user",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "user_id"
+                    ],
+                    "orders": []
+                },
+                {
+                    "key": "idx_recipients_updated",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "updated_at"
+                    ],
+                    "orders": []
+                }
+            ]
+        },
+        {
+            "$id": "device_tokens",
+            "$permissions": [
+                "create(\"users\")"
+            ],
+            "databaseId": "singgah",
+            "name": "Device Tokens",
+            "enabled": true,
+            "rowSecurity": true,
+            "columns": [
+                {
+                    "key": "user_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "token",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 512,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "platform",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "default": "android",
+                    "format": "enum",
+                    "elements": [
+                        "android",
+                        "web"
+                    ]
+                },
+                {
+                    "key": "created_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "updated_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_tokens_user",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "user_id"
+                    ],
+                    "orders": []
+                },
+                {
+                    "key": "idx_tokens_token",
+                    "type": "unique",
+                    "status": "available",
+                    "columns": [
+                        "token"
+                    ],
+                    "orders": []
+                }
+            ]
+        },
+        {
+            "$id": "rate_limits",
+            "$permissions": [],
+            "databaseId": "singgah",
+            "name": "Rate Limits",
+            "enabled": true,
+            "rowSecurity": true,
+            "columns": [
+                {
+                    "key": "user_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "action",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 64,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "window_start",
+                    "type": "datetime",
+                    "required": true,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "count",
+                    "type": "integer",
+                    "required": true,
+                    "array": false,
+                    "default": null,
+                    "min": -9223372036854776000,
+                    "max": 9223372036854776000
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_rate_user_action",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "user_id",
+                        "action"
+                    ],
+                    "orders": []
+                }
+            ]
+        },
+        {
+            "$id": "geocode_cache",
+            "$permissions": [],
+            "databaseId": "singgah",
+            "name": "Geocode Cache",
+            "enabled": true,
+            "rowSecurity": true,
+            "columns": [
+                {
+                    "key": "cache_key",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 256,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "payload",
+                    "type": "longtext",
+                    "required": true,
+                    "array": false,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "created_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "expires_at",
+                    "type": "datetime",
+                    "required": true,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_geocode_key",
+                    "type": "unique",
+                    "status": "available",
+                    "columns": [
+                        "cache_key"
+                    ],
+                    "orders": []
+                }
+            ]
+        },
+        {
+            "$id": "friendships",
+            "$permissions": [],
+            "databaseId": "singgah",
+            "name": "Friendships",
+            "enabled": true,
+            "rowSecurity": true,
+            "columns": [
+                {
+                    "key": "requester_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "requester_name",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 140,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "requester_email",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 200,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "addressee_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "addressee_email",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 200,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "status",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "default": null,
+                    "format": "enum",
+                    "elements": [
+                        "pending",
+                        "accepted"
+                    ]
+                },
+                {
+                    "key": "created_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "updated_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "deleted_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_friends_requester",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "requester_id"
+                    ],
+                    "orders": []
+                },
+                {
+                    "key": "idx_friends_addressee",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "addressee_id"
+                    ],
+                    "orders": []
+                },
+                {
+                    "key": "idx_friends_addressee_email",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "addressee_email"
+                    ],
+                    "orders": []
+                }
+            ]
+        },
+        {
+            "$id": "groups",
+            "$permissions": [
+                "create(\"users\")"
+            ],
+            "databaseId": "singgah",
+            "name": "Groups",
+            "enabled": true,
+            "rowSecurity": true,
+            "columns": [
+                {
+                    "key": "owner_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "name",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 80,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "member_ids",
+                    "type": "string",
+                    "required": false,
+                    "array": true,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "created_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "updated_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "deleted_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "co_owner_ids",
+                    "type": "string",
+                    "required": false,
+                    "array": true,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_groups_owner",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "owner_id"
+                    ],
+                    "orders": []
+                }
+            ]
+        },
+        {
+            "$id": "messages",
+            "$permissions": [
+                "create(\"users\")"
+            ],
+            "databaseId": "singgah",
+            "name": "Messages",
+            "enabled": true,
+            "rowSecurity": true,
+            "columns": [
+                {
+                    "key": "conversation_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 64,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "sender_id",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "sender_name",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 140,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "body",
+                    "type": "string",
+                    "required": true,
+                    "array": false,
+                    "size": 2000,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "created_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                },
+                {
+                    "key": "updated_at",
+                    "type": "datetime",
+                    "required": false,
+                    "array": false,
+                    "default": null,
+                    "format": ""
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "idx_messages_conversation",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "conversation_id"
+                    ],
+                    "orders": []
+                },
+                {
+                    "key": "idx_messages_created",
+                    "type": "key",
+                    "status": "available",
+                    "columns": [
+                        "created_at"
+                    ],
+                    "orders": []
+                }
+            ]
+        }
+    ],
+    "buckets": [
+        {
+            "$id": "avatars",
+            "$permissions": [
+                "read(\"any\")",
+                "create(\"users\")"
+            ],
+            "fileSecurity": true,
+            "name": "Avatars",
+            "enabled": true,
+            "maximumFileSize": 5242880,
+            "allowedFileExtensions": [
+                "jpg",
+                "jpeg",
+                "png",
+                "webp"
+            ],
+            "compression": "none",
+            "encryption": true,
+            "antivirus": true
+        }
+    ]
+}

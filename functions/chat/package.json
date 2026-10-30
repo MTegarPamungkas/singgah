@@ -1,0 +1,6 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": { "node-appwrite": "29.0.0" }
+}
